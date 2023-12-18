@@ -106,9 +106,9 @@ class _FirstScreenState extends State<FirstScreen> {
                   ),
                 ],
               ),
-              SizedBox(
-                height: 8.h,
-              ),
+              // SizedBox(
+              //   height: 8.h,
+              // ),
               Column(
                 children: [
                   Row(

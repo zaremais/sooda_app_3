@@ -12,8 +12,6 @@ class TextFormWidget extends StatefulWidget {
 }
 
 class _TextFormWidgetState extends State<TextFormWidget> {
-  TextEditingController controller = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -27,7 +25,7 @@ class _TextFormWidgetState extends State<TextFormWidget> {
                 color: const Color(0xffEDF0F8),
                 borderRadius: BorderRadius.circular(12.r)),
             child: TextFormField(
-              controller: controller,
+              textInputAction: TextInputAction.done,
               onChanged: (value) {
                 // print("введенный текст: $value");
               },

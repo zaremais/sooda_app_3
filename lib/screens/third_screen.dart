@@ -109,7 +109,8 @@ class _ThirdScreenState extends State<ThirdScreen> {
       child: SizedBox(
         height: 72.h,
         width: double.infinity,
-        child: Row(children: [
+        child: Row(
+          children: [
           for (int i = 0; i < isChecked.length; i++)
             if (isChecked[i] == true)
               InkWell(

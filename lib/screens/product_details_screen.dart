@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_sooda_app/constants/images.dart';
 
-class ItemScreen extends StatefulWidget {
-  const ItemScreen({super.key});
+class ProductDetailsScreen extends StatelessWidget {
+  const ProductDetailsScreen({super.key});
 
-  @override
-  State<ItemScreen> createState() => _ItemScreenState();
-}
-
-class _ItemScreenState extends State<ItemScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +23,7 @@ class _ItemScreenState extends State<ItemScreen> {
       ),
       body: Center(
         child: Image.asset(
-          "assets/images/1.png",
+          AppImages.salle1,
           width: 200.w,
         ),
       ),

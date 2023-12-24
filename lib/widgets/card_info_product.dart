@@ -8,10 +8,10 @@ import 'package:badges/badges.dart' as badges;
 class CardInfoProduct extends StatelessWidget {
   const CardInfoProduct({
     super.key,
-    required this.nameImage,
+    required this.image,
   });
 
-  final String nameImage;
+  final String image;
 
   @override
   Widget build(BuildContext context) {
@@ -31,12 +31,12 @@ class CardInfoProduct extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "№54931",
+                      '№54931',
                       style: GoogleFonts.nunitoSans(
                           fontSize: 16.sp, fontWeight: FontWeight.w700),
                     ),
                     Image.asset(
-                      "assets/icons/check.png",
+                      'assets/icons/check.png',
                       width: 24.w,
                     ),
                   ],
@@ -48,7 +48,7 @@ class CardInfoProduct extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Image.asset(
-                        nameImage,
+                        image,
                         width: 70.w,
                         height: 70.h,
                       ),
@@ -62,7 +62,7 @@ class CardInfoProduct extends StatelessWidget {
                           height: 8,
                         ),
                         Text(
-                          "Off-white, Футболка из рельефной\nткани",
+                          'Off-white, Футболка из рельефной\nткани',
                           maxLines: 2,
                           style: GoogleFonts.nunitoSans(
                               fontSize: 14.sp,
@@ -82,7 +82,7 @@ class CardInfoProduct extends StatelessWidget {
                               width: 4.w,
                             ),
                             Text(
-                              "500 ₽",
+                              '500 ₽',
                               style: GoogleFonts.nunitoSans(
                                   fontSize: 16.sp,
                                   fontWeight: FontWeight.w400,
@@ -99,7 +99,7 @@ class CardInfoProduct extends StatelessWidget {
                               width: 4.w,
                             ),
                             Text(
-                              "1 200 ₽",
+                              '1 200 ₽',
                               style: GoogleFonts.nunitoSans(
                                   fontSize: 16.sp,
                                   fontWeight: FontWeight.w400,
@@ -109,7 +109,7 @@ class CardInfoProduct extends StatelessWidget {
                               width: 50.w,
                             ),
                             Text(
-                              "54шт",
+                              '54шт',
                               style: GoogleFonts.nunitoSans(
                                   fontSize: 16.sp,
                                   fontWeight: FontWeight.w700,
@@ -121,7 +121,7 @@ class CardInfoProduct extends StatelessWidget {
                     ),
                   ],
                 ),
-                const Row(children: []),
+              
                 const SizedBox(
                   height: 10,
                 ),
@@ -129,14 +129,14 @@ class CardInfoProduct extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Image.asset(
-                      "assets/images/cube-01.png",
+                      'assets/images/cube-01.png',
                       width: 20.w,
                     ),
                     SizedBox(
                       width: 2.w,
                     ),
                     Text(
-                      "Склад",
+                      'Склад',
                       style: GoogleFonts.nunitoSans(
                           fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
@@ -146,7 +146,7 @@ class CardInfoProduct extends StatelessWidget {
                       width: 124.w,
                     ),
                     Text(
-                      "120 шт",
+                      '120 шт',
                       style: GoogleFonts.nunitoSans(
                           fontSize: 14.sp,
                           fontWeight: FontWeight.w600,

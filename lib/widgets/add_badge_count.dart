@@ -10,7 +10,7 @@ Widget addBadgeCount(
     badges.BadgeShape badgeShape = badges.BadgeShape.circle}) {
   return badges.Badge(
     showBadge: badgeCount != 0,
-    badgeContent: Text(badgeCount.toString()),
+    badgeContent: Text('+$badgeCount'),
     badgeStyle: badges.BadgeStyle(badgeColor: badgeColor, shape: badgeShape),
     child: widget,
   );

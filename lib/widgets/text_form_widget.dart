@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_sooda_app/constants/images.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TextFormWidget extends StatefulWidget {
@@ -27,17 +28,17 @@ class _TextFormWidgetState extends State<TextFormWidget> {
             child: TextFormField(
               textInputAction: TextInputAction.done,
               onChanged: (value) {
-                // print("введенный текст: $value");
+                print('введенный текст: $value');
               },
               decoration: InputDecoration(
                 prefixIcon: IconButton(
                     onPressed: () {},
                     icon: Image.asset(
-                      "assets/icons/search-lg.png",
+                      AppImages.search,
                       width: 56.w,
                     )),
                 border: const OutlineInputBorder(borderSide: BorderSide.none),
-                labelText: "Поиск",
+                labelText: 'Поиск',
                 labelStyle: GoogleFonts.nunitoSans(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w600,
@@ -45,7 +46,7 @@ class _TextFormWidgetState extends State<TextFormWidget> {
                 suffixIcon: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Image.asset(
-                    "assets/icons/scan.png",
+                    AppImages.scan,
                     width: 24.w,
                     height: 24.h,
                   ),
@@ -66,7 +67,7 @@ class _TextFormWidgetState extends State<TextFormWidget> {
             child: IconButton(
                 onPressed: () {},
                 icon: Image.asset(
-                  "assets/icons/settings-04.png",
+                  AppImages.settings,
                   width: 24.w,
                   color: const Color(0xff1C222B),
                 )),

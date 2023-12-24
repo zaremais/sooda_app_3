@@ -46,9 +46,9 @@ class CardDataWidget extends StatelessWidget {
               style: GoogleFonts.nunitoSans(
                 fontSize: 18,
                 fontWeight: FontWeight.w700,
-                color: price == "+32 000"
+                color: price == '+32 000'
                     ? Colors.green
-                    : price == "-2400"
+                    : price == '-2400'
                         ? Colors.red
                         : Colors.black,
               ),

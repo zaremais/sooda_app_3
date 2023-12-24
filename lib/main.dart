@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_sooda_app/screens/home_screen.dart';
-import 'package:flutter_sooda_app/screens/item_screen.dart';
 import 'package:flutter_sooda_app/splash/splash_screen.dart';
 
-
-
-
 void main() {
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding); 
+ 
   runApp(const MyApp());
 }
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -25,12 +26,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData.light(),
           darkTheme: ThemeData.dark(),
           themeMode: ThemeMode.system,
-
-          routes: {
-            "/":(context)=>const SplashScreen(),
-            "homeScreen": (context) => const HomeScreen(),
-            "itemScreen": (context)=> const ItemScreen(),
-          },
+          home: const SplashScreen(),
         ));
   }
 }
